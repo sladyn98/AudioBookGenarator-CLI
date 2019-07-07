@@ -55,7 +55,7 @@ user_chose_file = answers['chosen_file']
 # Spinning progress bar
 print("Your mp3 file is being generated\n")
 spinner = spinning_cursor()
-for _ in range(1000):
+for _ in range(100):
     sys.stdout.write(next(spinner))
     sys.stdout.flush()
     time.sleep(0.1)
