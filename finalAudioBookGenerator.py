@@ -74,6 +74,7 @@ txt = file.read()
 tts = gTTS(text = txt, lang = 'en')
 tts.save(sys.path[0] + "/mp3/read.mp3")
 file.close()
+print("Your mp3 file has been generated")
 
 
 
