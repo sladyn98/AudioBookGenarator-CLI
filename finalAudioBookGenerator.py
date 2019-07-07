@@ -58,7 +58,7 @@ base_filename  =  os.path.splitext(os.path.basename(filename))[0] + '.JPG'
 save_dir = sys.path[0] + "/intermediate_images/"
 i=1
 
-file = open(sys.path[0] + "/projects/pdf_text.txt", "w")
+file = open(sys.path[0] + "/intermediate_text_files" + str(user_chose_file), "w")
 for page in images_from_path:
     name = os.path.splitext(os.path.basename(filename))[0] + str(i) +'.JPG'
     name = sys.path[0] + "/intermediate_images/" + name
@@ -69,7 +69,7 @@ file.close()
 
 ###Audio file generating###
 from gtts import gTTS
-file = open(sys.path[0] + "/projects/pdf_text.txt", "r")
+file = open(sys.path[0] + "/intermediate_text_files" + str(user_chose_file), "r")
 txt = file.read()
 tts = gTTS(text = txt, lang = 'en')
 tts.save(sys.path[0] + "/mp3/read.mp3")
