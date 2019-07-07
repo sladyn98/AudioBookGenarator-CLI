@@ -2,7 +2,8 @@
 
 This is the command line version of the audioBookGenerator developed by @globefire.
 The Credits for the conversion script belong to him.
-This is a CLI Version for linux based systems.
+This is a CLI Version for linux based systems, with the link to the original version here: 
+https://github.com/globefire/Audio-book-generator
 
 ### How to run:
 
